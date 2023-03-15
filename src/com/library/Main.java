@@ -4,8 +4,8 @@ import java.util.List;
 import java.util.Scanner;
 
 import com.library.operations.crud.CrudOperations;
-import com.library.pojos.Book;
-import com.library.pojos.Library;
+import com.library.entities.Book;
+import com.library.entities.Library;
 
 public class Main {
 
@@ -58,7 +58,7 @@ public class Main {
                     Book book = crudService.readBook(title);
                     System.out.println("You asked for the following book: ");
                     System.out.println("Title: " + book.getTitle());
-                    System.out.println("Author: " + book.getAuthorName());
+                    System.out.println("Author: " + book.getAuthors().iterator().next());
                     System.out.println("ISBN: ISBN" + book.getIsbn() );
                     break;
                 case "4":

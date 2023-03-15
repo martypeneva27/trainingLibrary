@@ -2,8 +2,7 @@ package com.library.operations.crud;
 
 import java.util.List;
 
-import com.library.pojos.Book;
-import com.library.pojos.Document;
+import com.library.entities.Book;
 
 public interface ICrudBooks {
    Book createBook(String title, String authorName, String genre, int isbn);

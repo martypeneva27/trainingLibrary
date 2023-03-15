@@ -1,6 +1,6 @@
 package com.library.operations.crud;
 
-import com.library.pojos.Book;
+import com.library.entities.Book;
 
 public interface ILibrary {
    void addBook(Book book);
